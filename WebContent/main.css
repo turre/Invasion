@@ -1,5 +1,5 @@
 BODY {
-	background-color: #5F0013;
+	background-color: #000000; /*#5F0013*/
 	color: gray;
 	font-family: sans-serif;
 	margin: 0px;
@@ -20,6 +20,10 @@ H1, H2, H3, LI, P, SPAN, UL {
 	left: 10%;
 	top: 0px;
 	width: 80%;
+}
+
+#page p {
+	margin: 1em;
 }
 
 #intro {
