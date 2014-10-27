@@ -2,11 +2,11 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es">
 <head>
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
 
-<title>InvasiÃ³n - Strategy game</title>
+<title>Invasión - Strategy game</title>
 <style type="text/css" media="all">
-@import "css/main.css";
+@import "main.css";
 </style>
 </head>
 <body>
@@ -14,13 +14,13 @@
 		<div id="intro">
 			<img alt="banner" src="banner.png" />
 			<!-- 			<h1> -->
-			<!-- 				Se puede rellenar con texto, lo suyo serÃ­a poner la imagen aquÃ­ con img -->
+			<!-- 				Se puede rellenar con texto, lo suyo sería poner la imagen aquí con img -->
 			<!-- 			</h1> -->
 		</div>
 		<div id="menu">
 			<!-- loggueado -->
-			<a href="index.html">inicio</a> <a href="partidas.html">partidas</a>
-			<a href="usuario.html">usuario</a> <a href="ranking.html">ranking</a>
+			<a href="index.html">Inicio</a> <a href="partidas.html">Partidas</a>
+			<a href="usuario.html">Usuario</a> <a href="ranking.html">Ranking</a>
 			<!-- sin loguera -->
 			<!-- 			<a href="index.html">inicio</a> <a href="login.html">login</a> <a href="registro.html">registro</a> -->
 			<!-- 			<a href="ranking.html">ranking</a> -->
@@ -30,16 +30,46 @@
 			<div id="text">
 				<h1>RANKING</h1>
 
+				<!-- Comienzo de la tabla del ranking -->
+				<div id="tableRanking">
+					<table>
+						<tr>
+							<td>Posicion</td>
+							<td>Nombre del jugador</td>
+							<td>Puntuacion</td>
+						</tr>
+
+						<!-- Esto deberia hacerse con un lector de los usuarios, sus puntuaciones y demas atributos, leidos de una base de datos, pero por ahora se pondra un ejemplo de como quedaria la pagina-->
+						<tr>
+							<td>
+								<!-- numero de la posicion, empezando por el primero --> 1
+							</td>
+							<td>Arturo</td>
+							<td>6</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>Alvar</td>
+							<td>3</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>Alex</td>
+							<td>0</td>
+						</tr>
+
+					</table>
+				</div>
 			</div>
 
 			<div class="end"></div>
 		</div>
-		<div id="footer">InvasiÃ³n 2014</div>
+		<div id="footer">Invasión 2014</div>
 	</div>
 </body>
 <!-- <form method="post" action="index.html"> -->
 <!--     <p><input type="text" name="user" value="" placeholder="Nombre de usuario"/></p> -->
-<!--     <p><input type="text" name="email" value="" placeholder="Correo electrÃ³nico"/></p> -->
+<!--     <p><input type="text" name="email" value="" placeholder="Correo electrónico"/></p> -->
 <!--     <p><input type="password" name="password" value="" placeholder="Password"/></p> -->
 <!--     <p><input type="password" name="passwordValidation" value="" placeholder="Repita password"/></p> -->
 <!--         <p class="remember_me"> -->
