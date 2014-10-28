@@ -125,3 +125,25 @@ a:hover {
 	text-decoration: none;
 	background: #fff;
 }
+
+#mapa {
+	display: block;
+	margin: auto;
+}
+
+#userData {
+	margin: 2em;
+	text-align: right;
+}
+
+#userImage {
+	margin: -210px 270px 30px 10px;
+}
+
+#submit {
+	margin: 0px 650px 0px 0px;
+}
+
+#submit1 {
+	margin: 0px 250px 0px 0px;
+}
