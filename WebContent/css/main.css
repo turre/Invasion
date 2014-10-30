@@ -153,3 +153,9 @@ a:hover {
 	margin-left: auto;
 	margin-right: auto;
 }
+
+#tableRanking table, tr, td {
+	margin: auto;
+	border-collapse: collapse;
+	border: 1px solid white;
+ }
