@@ -1,9 +1,9 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html  >
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-
+<script type="text/javascript" src="js/jquery.validate.js"></script>
+<script type="text/javascript" src="js/jquery-2.0.0.min.js"></script>
 <title>Invasión - Strategy game</title>
 <style type="text/css" media="all">
 @import "css/main.css";
@@ -30,31 +30,58 @@
 			<div id="text">
 				<h1>LOGIN</h1>
 				<br />
-				<table id="userData" class="center">
-					<tr>
-						<th><label>Nombre de usuario</label></th>
-						<th><input type="text" name="user" value=""
-							placeholder="user" /></th>
-					</tr>
-					<tr>
-						<th><label>Clave de usuario</label></th>
-						<th><input type="password" name="password" value=""
-							placeholder="password" /></th>
-					</tr>
-					<tr>
-						<th><input type="submit" name="login" value="Acceder" /></th>
-						<th><input type="submit" name="lost"
-							value="He perdido mi clave" /></th>
-					</tr>
-				</table>
-				<table class="center">
-					<tr>
-						<th><label> <input type="checkbox"
-								name="remember_me" id="remember_me" /> Recordar en este
-								ordenador
-						</label></th>
-					</tr>
-				</table>
+				<form id="signinForm" method="get" action="">
+					<fieldset>
+						<table id="userData" class="center">
+
+							<tr>
+								<th><label for="uname">Nombre de usuario</label></th>
+								<th><input id="uname" type="text" name="user" value=""
+									placeholder="user" required /></th>
+							</tr>
+							<tr>
+								<th><label for="upass">Clave de usuario</label></th>
+								<th><input id="upass" type="password" name="password"
+									value="" placeholder="password" required /></th>
+							</tr>
+							<tr>
+								<th><input type="submit" class="submit" name="login"
+									value="Acceder" /></th>
+								<th><input type="button" name="lost"
+									value="He perdido mi clave" /></th>
+							</tr>
+						</table>
+						<table class="center">
+							<tr>
+								<th><label> <input type="checkbox"
+										name="remember_me" id="remember_me" /> Recordar en este
+										ordenador
+								</label></th>
+							</tr>
+						</table>
+					</fieldset>
+				</form>
+<!-- 	No funciona, no sé por qué			<script> 
+				
+// 					$("#signinForm")
+// 							.validate(
+// 									{
+// 										rules : {
+// 											uname : {
+// 												required : true,
+// 												minlength : 5,
+// 											}
+// 										},
+// 										messages : {
+// 											uname : {
+// 												required : "¡Nombre de usuario requerido!",
+// 												minlength : jQuery
+// 														.format("Por favor, introduzca un usuario con al menos 5 letras")
+// 											}
+// 										}
+// 									});
+ 				</script> -->
+
 			</div>
 
 			<div class="end"></div>

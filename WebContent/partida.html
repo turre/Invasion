@@ -1,8 +1,14 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+<link rel="stylesheet" href="css/jquery-jvectormap-2.0.1.css"
+	type="text/css" media="screen" />
+<script src="js/jquery-2.0.0.min.js"></script>
+<script src="js/jquery-jvectormap-2.0.1.min.js"></script>
+<script src="js/jquery-jvectormap-europe-mill-en.js"></script>
+
 
 <title>Invasión - Strategy game</title>
 <style type="text/css" media="all">
@@ -29,7 +35,18 @@
 			<br />
 			<div id="text">
 				<h1>PARTIDA</h1>
-
+				<br />
+				<div id="map" style="width: 800px; height: 600px" class="center">
+					<script>
+						$(function() {
+							$('#map').vectorMap({
+								map : 'europe_mill_en',
+								regionsSelectable : true,
+								markersSelectable : true,
+							});
+						});
+					</script>
+				</div>
 			</div>
 
 			<div class="end"></div>
@@ -37,17 +54,4 @@
 		<div id="footer">Invasión 2014</div>
 	</div>
 </body>
-<!-- <form method="post" action="index.html"> -->
-<!--     <p><input type="text" name="user" value="" placeholder="Nombre de usuario"/></p> -->
-<!--     <p><input type="text" name="email" value="" placeholder="Correo electrónico"/></p> -->
-<!--     <p><input type="password" name="password" value="" placeholder="Password"/></p> -->
-<!--     <p><input type="password" name="passwordValidation" value="" placeholder="Repita password"/></p> -->
-<!--         <p class="remember_me"> -->
-<!--           <label> -->
-<!--               <input type="checkbox" name="remember_me" id="remember_me"/> -->
-<!--             Recordar en este ordenador -->
-<!--           </label> -->
-<!--         </p> -->
-<!--             <p class="submit"><input type="submit" name="commit" value="Registrar"/></p> -->
-<!-- </form> -->
 </html>

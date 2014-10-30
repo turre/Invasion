@@ -132,9 +132,8 @@ a:hover {
 }
 
 #userData {
-		margin: auto;
+	margin: auto;
 	text-align: left;
-	
 }
 
 #userImage {
@@ -155,7 +154,11 @@ a:hover {
 }
 
 #tableRanking table, tr, td {
-	margin: auto;
+	margin-top: 2em;
 	border-collapse: collapse;
 	border: 1px solid white;
- }
+}
+
+fieldset {
+	border: none;
+}
