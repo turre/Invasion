@@ -132,8 +132,9 @@ a:hover {
 }
 
 #userData {
-/* 	margin: 2em; */
-	text-align: right;
+		margin: auto;
+	text-align: left;
+	
 }
 
 #userImage {

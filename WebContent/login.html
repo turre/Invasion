@@ -29,36 +29,32 @@
 			<br />
 			<div id="text">
 				<h1>LOGIN</h1>
-				<form method="post" action="index.html">
-					<p>
-						<label>Nombre de usuario <input type="text" name="user"
-							value="" placeholder="user" />
-						</label>
-					</p>
-
-					<!-- 					<p> -->
-					<!-- 						<input type="text" name="email" value="" -->
-					<!-- 							placeholder="Correo electrónico" /> -->
-					<!-- 					</p> -->
-					<p>
-						<label>Clave de usuario <input type="password"
-							name="password" value="" placeholder="Password" /></label>
-					</p>
-					<!-- 					<p> -->
-					<!-- 						<input type="password" name="passwordValidation" value="" -->
-					<!-- 							placeholder="Repita password" /> -->
-					<!-- 					</p> -->
-					<p class="remember_me">
-						<label> <input type="checkbox" name="remember_me"
-							id="remember_me" /> Recordar en este ordenador
-						</label>
-					</p>
-					<p class="submit">
-						<input type="submit" name="login" value="Acceder" /> <input
-							type="submit" name="lost" value="He perdido mi clave" />
-					</p>
-				</form>
-
+				<br />
+				<table id="userData" class="center">
+					<tr>
+						<th><label>Nombre de usuario</label></th>
+						<th><input type="text" name="user" value=""
+							placeholder="user" /></th>
+					</tr>
+					<tr>
+						<th><label>Clave de usuario</label></th>
+						<th><input type="password" name="password" value=""
+							placeholder="password" /></th>
+					</tr>
+					<tr>
+						<th><input type="submit" name="login" value="Acceder" /></th>
+						<th><input type="submit" name="lost"
+							value="He perdido mi clave" /></th>
+					</tr>
+				</table>
+				<table class="center">
+					<tr>
+						<th><label> <input type="checkbox"
+								name="remember_me" id="remember_me" /> Recordar en este
+								ordenador
+						</label></th>
+					</tr>
+				</table>
 			</div>
 
 			<div class="end"></div>
