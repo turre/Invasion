@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -12,37 +13,53 @@
 	<div id="page">
 		<div id="intro">
 			<img alt="banner" src="img/banner.png" />
-			<!-- 			<h1> -->
-			<!-- 				Se puede rellenar con texto, lo suyo sería poner la imagen aquí con img -->
-			<!-- 			</h1> -->
 		</div>
 		<div id="menu">
 			<!-- loggueado -->
 			<a href="index.html">Inicio</a> <a href="partidas.html">Partidas</a>
 			<a href="usuario.html">Usuario</a> <a href="ranking.html">Ranking</a>
-			<!-- sin loguera -->
-			<!-- 			<a href="index.html">inicio</a> <a href="login.html">login</a> <a href="registro.html">registro</a> -->
-			<!-- 			<a href="ranking.html">ranking</a> -->
 		</div>
 		<div id="content">
 			<br />
 			<div id="text">
 				<h1>USUARIO</h1>
-
 			</div>
-			<form method="post" action="usuario.html">
-			<div id="userData">
+			<br/>
+			<table id="userData" class="center">
+				<tr>
+					<th>Nombre usuario: </th>
+					<th><input type="text" name="user" value="" placeholder="Name"/></th>
+				</tr>
+				<tr>
+					<th><br/></th>
+				</tr>
+				<tr>
+					<th>Apellidos: </th>
+					<th><input type="text" name="surnames" value="" placeholder="Surnames"/></th>
+				</tr>
+				<tr>
+					<th><br/></th>
+				</tr>
+				<img id="userImage" src="img/userImage.png"/>
+				<tr>
+					<th>Correo electrónico: </th>
+					<th><input type="text" name="email" value="" placeholder="Email"/></th>
+				</tr>
+				<tr>
+					<th><br/></th>
+				</tr>
+				<tr>
+					<th>Contraseña: </th>
+					<th><input type="password" name="password" value="" placeholder="Password"/></th>
+				</tr>
 			
-  		    <p>Nombre: <input type="text" name="user" value=""/></p>
-  			<p>Apellidos : <input type="text" name="surnames" value=""/></p>
-  			<p>Correo electrónico: <input type="text" name="email" value=""/></p>
-  			<img id="userImage" src="img/userImage.png"/>
-    		<div id="submit1"><input type="submit" name="cambiarfoto" value="Cambiar Foto"/></div>
-    		<p>Contraseña : <input type="password" name="password" value="" placeholder="Password"/></p>
-        
-        	        
+			</table>
+			    		
+        	<div id="submit1"><input type="submit" name="cambiarfoto" value="Cambiar Foto"/></div>
+        	<br/>
+        	<br/>       
             <div id="submit"><input type="submit" name="commit" value="Modificar"/></div>
-			
+            
 			</div>
 			</form>
 			<div class="end"></div>

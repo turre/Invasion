@@ -137,15 +137,15 @@ a:hover {
 }
 
 #userImage {
-	margin: -210px 270px 30px 10px;
+	margin: 70px 0px 0px 100px;
+	float:left;
+	
 }
-
+#submit1{
+	margin: -20px 0px 0px 75px;
+}
 #submit {
-	margin: 0px 650px 0px 0px;
-}
-
-#submit1 {
-	margin: 0px 250px 0px 0px;
+	margin: 0px 0px 0px 595px;
 }
 
 .center {
@@ -154,10 +154,16 @@ a:hover {
 }
 
 #tableRanking table, tr, td {
-	margin-top: 2em;
+	margin: auto;
 	border-collapse: collapse;
 	border: 1px solid white;
-}
+ }
+ 
+ #tablaPartidas table, tr, td {
+ 	margin: auto;
+ 	border-collapse: collapse;
+ 	border: 1px solid blue;
+ }
 
 fieldset {
 	border: none;
